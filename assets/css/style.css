@@ -1,0 +1,316 @@
+/* Basic css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #707070;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 15px;
+  line-height: 1.2;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+button:focus {
+  outline: 0 solid;
+}
+
+.gradient-buttons {
+  max-width: 330px;
+  margin-top: 35px;
+}
+
+.gradient-buttons div {
+  min-width: 140px;
+  padding: 4px;
+  background: linear-gradient(to right, #EB317D, #09A4DF);
+  border-radius: 30px;
+}
+
+.gradient-btn {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  background: #121212;
+  display: inline-block;
+  width: calc(100% - 2px);
+  padding: 9px 0;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.login-btn-wrap .gradient-btn {
+  background: transparent;
+}
+
+.gradient-buttons div:hover .gradient-btn {
+  background: transparent;
+  color: #fff;
+}
+
+.gradient-buttons div.login-btn-wrap:hover .gradient-btn {
+  background: #121212;
+}
+
+
+/* Main styles */
+.wrap {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #eb2c7e;
+  position: relative;
+  padding: 75px 0px;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+
+.form-box {
+  background-color: #121212;
+  border-radius: 10px;
+  min-height: 620px;
+}
+
+.form-box.last-page {
+  background: url(../img/new-bg.png) no-repeat scroll center center / cover;
+  display: none;
+}
+
+
+.form-box.last-page p {
+  color: #fff;
+  font-size: 32px;
+  margin-left: 40px;
+}
+
+.form-box>.row {
+  flex: 1;
+}
+
+.black-box {
+  padding: 30px;
+  min-height: 620px;
+}
+
+.black-box .form-wrap {
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+
+.black-box .form-wrap .top-logo {
+  padding-bottom: 50px;
+}
+
+.form-box {
+  background-color: #121212;
+  border-radius: 10px;
+}
+
+.black-box {
+  padding: 30px;
+  display: grid;
+}
+
+.black-box .form-wrap {
+  padding: 30px 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  display: none;
+  align-self: center;
+}
+
+.login .main-form {
+  margin-bottom: 50px;
+}
+
+.black-box .form-wrap.signup-login-buttons {
+  display: block;
+  margin-bottom: 60px;
+}
+
+.black-box .form-wrap .top-logo {
+  padding-bottom: 50px;
+}
+
+.black-box .form-wrap .top-logo+p {
+  margin-top: 40px;
+}
+
+.black-box .bottom-content {
+  position: relative;
+  padding-left: 100px;
+  text-align: right;
+  /* padding-top: 115px; */
+  padding-top: 14px;
+  align-self: end;
+}
+
+.black-box .bottom-content .nextvnroleplay-icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 80px;
+}
+
+.black-box .bottom-content p a {
+  display: inline-block;
+}
+
+.black-box .bottom-content p a img {
+  max-width: 20px;
+}
+
+.black-box .bottom-content {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.black-box .bottom-content .red,
+.black-box .bottom-content a {
+  color: #eb2c7e;
+  font-weight: 500;
+}
+
+
+.form-box .citybg {
+  background: url(../img/city-bg.png) no-repeat scroll center center / cover;
+  min-height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.top-input-logo img {
+  max-width: 220px;
+}
+
+.main-form form .input-wrap {
+  background: transparent;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.form-wrap.signup .main-form form .input-wrap {
+  margin-bottom: 10px;
+}
+
+.main-form form .input-wrap.bordered {
+  background: linear-gradient(to right, #EB317D, #09A4DF);
+}
+
+.main-form form input {
+  background-color: #1C1C1C;
+  border: 0;
+  color: #707070;
+  font-size: 20px;
+  width: 360px;
+  height: 60px;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+
+.main-form form input::placeholder {
+  color: #707070;
+  font-size: 20px;
+  text-align: center;
+}
+
+.last-page button[type=button],
+.main-form form button[type=submit],
+.main-form form button[type=button] {
+  background: #343434;
+  color: #5E5E5E;
+  font-size: 12px;
+  font-weight: 500;
+  border: 0;
+  position: relative;
+  margin-top: 10px;
+  padding: 12px 35px;
+  border-radius: 25px;
+}
+
+.last-page button[type=button]:hover,
+.main-form form button[type=submit]:hover,
+.main-form form button[type=button]:hover {
+  background: linear-gradient(to right, #EB317D, #09A4DF);
+  color: #fff;
+}
+
+.last-page button[type=button] { 
+  background: linear-gradient(to right, #EB317D, #09A4DF);
+  color: #fff;
+}
+
+.last-page button[type=button]:hover {
+  background: #343434;
+}
+
+.signup form button[type=submit] {
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.checkbox {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkbox label {
+  margin-bottom: 0;
+}
+
+.checkbox input#checkbox {
+  width: auto;
+  margin-right: 10px;
+}
+.login-buttons button:first-child {
+  position: relative;
+  background: none;
+  border: none;
+}
+
+.date-submit {
+  display: none;
+}
+.signup-submit-buttons {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+button img {
+  margin-right: 10px;
+}
